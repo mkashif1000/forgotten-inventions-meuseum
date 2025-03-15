@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Browse our collection of forgotten and obsolete inventions throughout history">
+    <title>Inventions Gallery - Forgotten Inventions Museum</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Forgotten Inventions Museum</h1>
+        </div>
+        <nav>
+            <button class="hamburger" id="hamburgerBtn">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="inventions.html" class="active">Inventions</a></li>
+                <li><a href="timeline.html">Timeline</a></li>
+                <li><a href="submit.html">Submit</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <h2>Inventions Gallery</h2>
+        </section>
+
+        <section class="filter-section">
+            <h3>Filter Inventions</h3>
+            <div class="filter-controls">
+                <div class="filter-group">
+                    <label for="eraFilter">Era:</label>
+                    <select id="eraFilter">
+                        <option value="all">All Eras</option>
+                        <option value="pre-1900">Pre-1900</option>
+                        <option value="1900-1950">1900-1950</option>
+                        <option value="1950-2000">1950-2000</option>
+                        <option value="2000-present">2000-Present</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="categoryFilter">Category:</label>
+                    <select id="categoryFilter">
+                        <option value="all">All Categories</option>
+                        <option value="transportation">Transportation</option>
+                        <option value="communication">Communication</option>
+                        <option value="computing">Computing</option>
+                        <option value="home">Home Appliances</option>
+                        <option value="entertainment">Entertainment</option>
+                    </select>
+                </div>
+                <button id="applyFilter" class="btn">Apply Filter</button>
+            </div>
+        </section>
+
+        <section class="inventions-grid" id="inventionsGrid">
+            <!-- Inventions will be dynamically populated here -->
+            <article class="invention-card" data-era="1950-2000" data-category="communication" id="picturephone">
+                <div class="invention-image">
+                    <img src="images/videophone.jpg" alt="Bell Labs Picturephone from 1970">
+                </div>
+                <div class="invention-details">
+                    <h3>The Picturephone (1970)</h3>
+                    <p class="invention-meta">Era: 1970s | Category: Communication</p>
+                    <p>Bell Labs' revolutionary video calling system allowed users to see each other while talking on the phone. Despite being technologically advanced, high costs and limited adoption led to its commercial failure.</p>
+                    <button class="expand-btn">Read More</button>
+                    <div class="expanded-content">
+                        <p>The Picturephone was first demonstrated at the 1964 New York World's Fair, where it captured the public's imagination. Bell invested over $500 million in developing the technology, but subscription costs were prohibitively expensive at about $160 per month (equivalent to over $1,000 today).</p>
+                        <p>While the technology worked well, the Picturephone never gained widespread adoption. By 1973, only 100 Picturephones were in service, making it one of the most expensive commercial failures in telecommunications history. Video calling technology would have to wait nearly 40 years before becoming mainstream with services like Skype and FaceTime.</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="invention-card" data-era="1950-2000" data-category="entertainment" id="betamax">
+                <div class="invention-image">
+                    <img src="images/betamax.jpg" alt="Sony Betamax video recorder">
+                </div>
+                <div class="invention-details">
+                    <h3>Betamax (1975)</h3>
+                    <p class="invention-meta">Era: 1970s | Category: Entertainment</p>
+                    <p>Sony's Betamax format offered superior video and audio quality compared to VHS but lost the format war due to shorter recording times and Sony's restrictive licensing practices.</p>
+                    <button class="expand-btn">Read More</button>
+                    <div class="expanded-content">
+                        <p>Betamax was introduced in 1975, a year before JVC's competing VHS format. Despite technical superiority, including better resolution, less video noise, and more stable images, Betamax struggled with one critical limitation: the tapes could initially only record for one hour, while VHS offered two hours.</p>
+                        <p>This limitation, combined with Sony's decision to maintain tight control over licensing, ultimately led to Betamax's downfall. By 1988, Sony admitted defeat and began producing VHS players. Betamax remains a classic case study of how superior technology doesn't always win in the marketplace when competing against more pragmatic alternatives.</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="invention-card" data-era="1900-1950" data-category="transportation" id="nuclear-aircraft">
+                <div class="invention-image">
+                    <img src="images/nuclear-aircraft.jpg" alt="Concept art of nuclear-powered aircraft">
+                </div>
+                <div class="invention-details">
+                    <h3>Nuclear Aircraft (1950s)</h3>
+                    <p class="invention-meta">Era: 1950s | Category: Transportation</p>
+                    <p>The ambitious attempt to create aircraft powered by nuclear reactors promised unlimited range but was ultimately abandoned due to safety concerns and prohibitive weight.</p>
+                    <button class="expand-btn">Read More</button>
+                    <div class="expanded-content">
+                        <p>During the Cold War, both the United States and Soviet Union invested heavily in developing nuclear-powered aircraft. The U.S. Aircraft Nuclear Propulsion program ran from 1946 to 1961, costing over $1 billion (equivalent to $8 billion today).</p>
+                        <p>Engineers faced insurmountable challenges: the massive shielding required to protect the crew from radiation made the aircraft too heavy, and the risk of crashes spreading radioactive material was deemed unacceptable. The program was canceled in 1961 by President Kennedy, though some prototype reactors were successfully tested on the ground.</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="invention-card" data-era="1950-2000" data-category="computing" id="bubble-memory">
+                <div class="invention-image">
+                    <img src="images/bubble-memory.jpg" alt="Magnetic bubble memory device">
+                </div>
+                <div class="invention-details">
+                    <h3>Magnetic Bubble Memory (1970s)</h3>
+                    <p class="invention-meta">Era: 1970s | Category: Computing</p>
+                    <p>Once thought to be the future of computer storage, this non-volatile memory technology was rendered obsolete by rapidly improving hard disk drives and solid-state memory.</p>
+                    <button class="expand-btn">Read More</button>
+                    <div class="expanded-content">
+                        <p>Developed at Bell Labs in the late 1960s, magnetic bubble memory stored data in small magnetized areas called "bubbles" on thin films of magnetic material. It was non-volatile, had no moving parts, and was more compact than hard drives of the era.</p>
+                        <p>By the early 1980s, companies including Intel and Texas Instruments were mass-producing bubble memory. However, rapid advances in hard disk technology and the emergence of flash memory in the late 1980s made bubble memory obsolete before it could achieve widespread adoption.</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="invention-card" data-era="pre-1900" data-category="transportation" id="atmospheric-railway">
+                <div class="invention-image">
+                    <img src="images/atmospheric-railway.jpg" alt="Brunel's Atmospheric Railway illustration">
+                </div>
+                <div class="invention-details">
+                    <h3>Atmospheric Railway (1840s)</h3>
+                    <p class="invention-meta">Era: 1840s | Category: Transportation</p>
+                    <p>Isambard Kingdom Brunel's innovative railway used atmospheric pressure instead of steam locomotives to move trains, but technical problems led to its abandonment.</p>
+                    <button class="expand-btn">Read More</button>
+                    <div class="expanded-content">
+                        <p>The atmospheric railway used a vacuum pipe between the rails. A piston connected to the train ran inside this pipe, and atmospheric pressure pushed the train forward when a vacuum was created ahead of the piston.</p>
+                        <p>Brunel implemented this system on the South Devon Railway in England in 1847, but it suffered from fundamental flaws. The leather flap sealing the vacuum pipe was damaged by rats, deteriorated in bad weather, and the system proved less reliable and more expensive than conventional steam locomotives. The experiment was abandoned after just one year of operation.</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="invention-card" data-era="2000-present" data-category="home" id="crt-tv">
+                <div class="invention-image">
+                    <img src="images/crt-tv.jpg" alt="Cathode Ray Tube Television">
+                </div>
+                <div class="invention-details">
+                    <h3>CRT Television (1934-2000s)</h3>
+                    <p class="invention-meta">Era: 1934-2000s | Category: Home Entertainment</p>
+                    <p>Once the centerpiece of home entertainment worldwide, cathode ray tube televisions were rapidly displaced by flat-panel technologies in the early 2000s.</p>
+                    <button class="expand-btn">Read More</button>
+                    <div class="expanded-content">
+                        <p>CRT televisions dominated the market for over 70 years. They worked by shooting electron beams at a phosphorescent screen inside a vacuum tube, creating the images we watched.</p>
+                        <p>Despite their reliability and picture quality advantages, CRTs were heavy, bulky, and energy-inefficient. The rapid development of LCD and plasma display technologies in the early 2000s led to the swift decline of CRT production. By 2010, most major manufacturers had ceased CRT production entirely, marking the end of an era in display technology.</p>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section class="pagination">
+            <button id="loadMoreBtn" class="btn">Load More Inventions</button>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Forgotten Inventions Museum</h3>
+                <p>Preserving the memory of technologies that time forgot</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="inventions.html">Inventions</a></li>
+                    <li><a href="timeline.html">Timeline</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect</h3>
+                <ul>
+                    <li><a href="submit.html">Submit an Invention</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Forgotten Inventions Museum. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

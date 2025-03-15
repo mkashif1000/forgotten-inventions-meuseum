@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Submit a forgotten invention to our museum collection">
+    <title>Submit an Invention - Forgotten Inventions Museum</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Forgotten Inventions Museum</h1>
+        </div>
+        <nav>
+            <button class="hamburger" id="hamburgerBtn">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="inventions.html">Inventions</a></li>
+                <li><a href="timeline.html">Timeline</a></li>
+                <li><a href="submit.html" class="active">Submit</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <h2>Submit an Invention</h2>
+        </section>
+
+        <section class="submission-intro">
+            <div class="submission-image">
+                <img src="images/submission.jpg" alt="A collection of vintage technologies and documents">
+            </div>
+            <div class="submission-text">
+                <h3>Help Us Preserve Technological History</h3>
+                <p>Do you know of a forgotten invention, abandoned technology, or obsolete device that deserves to be remembered? We welcome submissions from technology enthusiasts, historians, and the general public.</p>
+                <p>Your contribution helps us build a comprehensive archive of technological innovation throughout history, including the paths not taken.</p>
+            </div>
+        </section>
+
+        <section class="submission-form">
+            <h3>Invention Submission Form</h3>
+            <form id="inventionSubmitForm">
+                <div class="form-group">
+                    <label for="yourName">Your Name:</label>
+                    <input type="text" id="yourName" name="yourName" required>
+                    <span class="error-message" id="nameError"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+                    <span class="error-message" id="emailError"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="inventionName">Invention Name:</label>
+                    <input type="text" id="inventionName" name="inventionName" required>
+                    <span class="error-message" id="inventionNameError"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="yearCreated">Year Created (approximate):</label>
+                    <input type="number" id="yearCreated" name="yearCreated" min="1700" max="2025">
+                    <span class="error-message" id="yearError"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="inventor">Inventor/Creator (if known):</label>
+                    <input type="text" id="inventor" name="inventor">
+                </div>
+                
+                <div class="form-group">
+                    <label for="category">Category:</label>
+                    <select id="category" name="category" required>
+                        <option value="">-- Select Category --</option>
+                        <option value="transportation">Transportation</option>
+                        <option value="communication">Communication</option>
+                        <option value="computing">Computing</option>
+                        <option value="home">Home Appliances</option>
+                        <option value="entertainment">Entertainment</option>
+                        <option value="medicine">Medicine</option>
+                        <option value="industrial">Industrial</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <span class="error-message" id="categoryError"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="description">Description:</label>
+                    <textarea id="description" name="description" rows="5" required></textarea>
+                    <span class="error-message" id="descriptionError"></span>
+                    <div class="char-counter">
+                        <span id="charCount">0</span>/500 characters
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="whyForgotten">Why was it forgotten or abandoned?</label>
+                    <textarea id="whyForgotten" name="whyForgotten" rows="3" required></textarea>
+                    <span class="error-message" id="whyForgottenError"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="sources">Sources/References (if any):</label>
+                    <textarea id="sources" name="sources" rows="2"></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="termsAgree" name="termsAgree" required>
+                        I confirm that this information is accurate to the best of my knowledge
+                        <span class="error-message" id="termsError"></span>
+                    </label>
+                </div>
+                
+                <div class="form-buttons">
+                    <button type="submit" class="btn">Submit Invention</button>
+                    <button type="reset" class="btn btn-secondary">Reset Form</button>
+                </div>
+            </form>
+            <div id="submissionMessage" class="submission-message"></div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Forgotten Inventions Museum</h3>
+                <p>Preserving the memory of technologies that time forgot</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="inventions.html">Inventions</a></li>
+                    <li><a href="timeline.html">Timeline</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect</h3>
+                <ul>
+                    <li><a href="submit.html">Submit an Invention</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Forgotten Inventions Museum. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

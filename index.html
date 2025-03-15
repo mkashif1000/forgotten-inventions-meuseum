@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Forgotten Inventions Museum - Explore the world of abandoned and obsolete technologies">
+    <title>Forgotten Inventions Museum</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Forgotten Inventions Museum</h1>
+        </div>
+        <nav>
+            <button class="hamburger" id="hamburgerBtn">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="inventions.html">Inventions</a></li>
+                <li><a href="timeline.html">Timeline</a></li>
+                <li><a href="submit.html">Submit</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Rediscover the Forgotten</h2>
+                <p>Explore the fascinating world of abandoned technologies and obsolete inventions that shaped our past but didn't survive into our present.</p>
+                <a href="inventions.html" class="btn">Explore Inventions</a>
+            </div>
+        </section>
+
+        <section class="featured-section">
+            <h2>Featured Inventions</h2>
+            <div class="featured-grid">
+                <article class="featured-item">
+                    <img src="images/videophone.jpg" alt="1970s Videophone prototype" class="featured-img">
+                    <h3>The Picturephone (1970)</h3>
+                    <p>Bell Labs' early video calling system that was decades ahead of its time but failed commercially.</p>
+                    <a href="inventions.html#picturephone" class="read-more">Read More</a>
+                </article>
+                <article class="featured-item">
+                    <img src="images/betamax.jpg" alt="Betamax video cassette player" class="featured-img">
+                    <h3>Betamax (1975)</h3>
+                    <p>Sony's superior video format that lost the format war to VHS despite better quality.</p>
+                    <a href="inventions.html#betamax" class="read-more">Read More</a>
+                </article>
+                <article class="featured-item">
+                    <img src="images/nuclear-aircraft.jpg" alt="Concept art of nuclear-powered aircraft" class="featured-img">
+                    <h3>Nuclear Aircraft (1950s)</h3>
+                    <p>The ambitious but ultimately abandoned attempt to create nuclear-powered passenger planes.</p>
+                    <a href="inventions.html#nuclear-aircraft" class="read-more">Read More</a>
+                </article>
+            </div>
+        </section>
+
+        <section class="newsletter">
+            <h2>Stay Updated</h2>
+            <p>Subscribe to our newsletter for the latest additions to our collection</p>
+            <form id="newsletterForm">
+                <input type="email" id="emailSubscribe" placeholder="Enter your email" required>
+                <button type="submit" class="btn">Subscribe</button>
+            </form>
+            <p id="subscribeMessage"></p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Forgotten Inventions Museum</h3>
+                <p>Preserving the memory of technologies that time forgot</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="inventions.html">Inventions</a></li>
+                    <li><a href="timeline.html">Timeline</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect</h3>
+                <ul>
+                    <li><a href="submit.html">Submit an Invention</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Forgotten Inventions Museum. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
